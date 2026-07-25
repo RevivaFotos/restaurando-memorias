@@ -150,18 +150,22 @@ elementos.forEach(el=>{
 SLIDER ANTES / DEPOIS
 =========================================*/
 
-const slider = document.querySelector(".slider");
-const overlay = document.querySelector(".img-overlay");
+document.addEventListener("DOMContentLoaded",()=>{
 
-if (slider && overlay) {
+    const slider = document.querySelector(".slider");
+    const overlay = document.querySelector(".img-overlay");
 
-    slider.addEventListener("input", function () {
+    if(slider && overlay){
 
-        overlay.style.width = this.value + "%";
+        slider.addEventListener("input",function(){
 
-    });
+            overlay.style.width = this.value + "%";
 
-}
+        });
+
+    }
+
+});
 
 
 /*=========================================
